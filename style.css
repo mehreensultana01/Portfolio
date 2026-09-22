@@ -612,8 +612,6 @@ footer{
        NAVIGATION
     ========================================= */
 
-     @media (max-width: 700px) {
-
     .topnav {
         display: block;
         position: sticky;
