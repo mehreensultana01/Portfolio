@@ -614,10 +614,9 @@ footer{
 
     .topnav {
         display: block;
-        position: relative;
         width: 100%;
         min-height: 55px;
-        background: #2563eb;
+        background: #333;
         position: sticky;
         z-index: 9999;
     }
