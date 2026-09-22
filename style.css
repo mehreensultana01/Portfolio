@@ -612,17 +612,16 @@ footer{
        NAVIGATION
     ========================================= */
 
-    .topnav {
-        width: 100%;
-        box-sizing: border-box;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
+     .topnav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .topnav a {
-        font-size: 14px;
-        padding: 12px 10px;
+        float: none;
+        font-size: 13px;
+        padding: 10px 8px;
     }
 
 
