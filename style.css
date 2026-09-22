@@ -612,7 +612,7 @@ footer{
        NAVIGATION
     ========================================= */
 
-.topnav {
+    .topnav {
         display: block;
         position: relative;
         width: 100%;
@@ -672,6 +672,7 @@ footer{
         left: 0;
         top: 0;
     }
+
 
 
     /* =========================================
