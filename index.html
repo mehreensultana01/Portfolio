@@ -74,7 +74,9 @@
    <a href="#skills">Skills</a>
    <a href="#Personal_Info">Personal Info</a>
    <a href="#featured-projects">Projects</a>
-   <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+       <i class="fas fa-bars"></i>
+   </a>
 
  </div>
 
@@ -405,6 +407,16 @@
 </p>
 
 </footer>
+<script>
+function myFunction() {
+    var nav = document.getElementById("myTopnav");
 
+    if (nav.className === "topnav") {
+        nav.className += " responsive";
+    } else {
+        nav.className = "topnav";
+    }
+}
+</script>
 </body>
 </html>
