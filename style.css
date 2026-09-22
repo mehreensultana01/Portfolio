@@ -612,19 +612,23 @@ footer{
        NAVIGATION
     ========================================= */
 
-      .topnav {
+     @media (max-width: 700px) {
+
+    .topnav {
         display: block;
         position: sticky;
         top: 0;
         z-index: 1000;
     }
 
+    /* Hide all navigation links */
     .topnav a {
         display: none;
     }
 
+    /* Hamburger icon on LEFT */
     .topnav a.icon {
-         display: block;
+        display: block;
         float: none;
         position: absolute;
         left: 0;
@@ -633,6 +637,7 @@ footer{
         padding: 14px 18px;
     }
 
+    /* Open menu */
     .topnav.responsive {
         position: sticky;
         top: 0;
@@ -645,6 +650,7 @@ footer{
         padding: 14px 20px;
     }
 
+    /* Keep hamburger at top-left when menu is open */
     .topnav.responsive a.icon {
         position: absolute;
         left: 0;
