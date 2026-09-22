@@ -1,25 +1,410 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-    <title>Mehreen's Portfolio</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Mehreen Sultana | Front-End Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/919ef41102.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
 
-<h1>Hello, I'm Mehreen</h1>
 
-<p>I'm graduated with a Computer Science degree.</p>
+<div id="home">
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <img src="images/mehreen.jpg" alt="Mehreen Sultana" class="profile">
+
+        <h1>Hi, I'm Mehreen Sultana 👋</h1>
+
+        <h2> Front-End Web Developer </h2>
+
+        <p>
+            I build responsive, user-friendly websites using HTML, CSS, and JavaScript.
+            I'm passionate about creating clean, modern web experiences and continuously
+            learning new technologies.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="Mehreen_Sultana__CV.pdf" download="MehreenSultana_CV.pdf" class="btn btn-outline">
+             <i class="fas fa-file-download"></i> Download CV</a>
+
+            <a href="mailto:mehreensultana01@gmail.com" class="btn btn-outline">
+              <i class="fa-solid fa-circle-user"></i> Contact Me</a>
+
+        </div>
+
+        <div class="social-icons">
+
+          <a href="https://github.com/mehreensultana01" target="_blank">
+           <i class="fab fa-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/mehreensultana01" target="_blank">
+           <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a href="mailto:mehreensultana01@gmail.com">
+           <i class="fas fa-envelope"></i>
+          </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+</div>
+
+
+ <div class="topnav" id="myTopnav">
+
+   <a href="#home">Home</a>
+   <a href="#About_Me">About</a>
+   <a href="#Education">Education</a>
+   <a href="#skills">Skills</a>
+   <a href="#Personal_Info">Personal Info</a>
+   <a href="#featured-projects">Projects</a>
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+
+ </div>
+
+
+<section>
+
+ <div id="About_Me" class="section">
+   
+  <h2>About Me</h2>
+
+   <p>
+      I'm a Computer Science graduate passionate about front-end web development. I enjoy creating responsive, user-friendly websites using HTML, CSS, and JavaScript. I'm currently building real-world projects while seeking internship and junior developer opportunities where I can continue learning and contribute to meaningful products.
+   </p>
+
+ </div>
+
+</section>
+
+
+<section>
+
+ <div id="Education" class="section">
+
+  <h2>Education</h2>
+
+   <ul>
+
+    <br>
+     <li><b>BS in Computer Science (BS-CS)   2020</b>  
+      <br>Bahria University Karachi Campus </br></li>
+    </br>
+
+    <br>
+     <li><b>Intermediate (Pre-Engineering)   2016</b>
+      <br>Board of Intermediate Education </br></li>
+    </br>
+
+    <br>
+     <li><b>Matriculation (Computer Science) 2014</b>
+      <br>Board of Secondary Education Karachi </br></li>
+    </br>
+
+   </ul>
+
+ </div>
+
+</section>
+
+
+<section id="skills">
 
 <h2>Skills</h2>
 
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-</ul>
+<div class="skill">
+    <p>HTML</p>
+    <div class="progress">
+        <div class="progress-bar html">90%</div>
+    </div>
+</div>
 
-<h2>My Goal</h2>
+<div class="skill">
+    <p>CSS</p>
+    <div class="progress">
+        <div class="progress-bar css">85%</div>
+    </div>
+</div>
 
-<p>I want to become a professional web developer and freelancer.</p>
+<div class="skill">
+    <p>JavaScript</p>
+    <div class="progress">
+        <div class="progress-bar js">60%</div>
+    </div>
+</div>
+
+<div class="skill">
+    <p>Git & GitHub</p>
+    <div class="progress">
+        <div class="progress-bar git">70%</div>
+    </div>
+</div>
+
+</section>
+
+
+<section>
+ <div id="Personal_Info" class="section">
+  <h2>Personal Info</h2>
+
+    <p><i class="fas fa-envelope"></i><strong>Email:</strong> mehreensultana01@gmail.com</p>
+    <p><i class="fa-solid fa-phone"></i> <strong>Phone:</strong> 0333-3465675 </p>
+    <p><i class="fab fa-github"></i> GitHub: </b> <a href="https://github.com/mehreensultana01/Portfolio">Visit My GitHub</a> </p>
+    <p><i class="fab fa-linkedin"></i> LinkedIn: </b> www.linkedin.com/in/mehreensultana01 </p> 
+    <p><i class="fa-solid fa-location-dot"></i> Location: </b> Karachi, Pakistan </p>
+
+</div>
+</section>
+
+<section id="Projects">
+
+<h2>Projects</h2>
+
+<div class="project-container">
+  <div class="project-card">
+    <h3>Portfolio Website</h3>
+    <p>HTML • CSS</p>
+    <a href="https://github.com/mehreensultana01/Portfolio" target="_blank">
+    <button>View Project</button>
+    </a>
+  </div>
+
+  <div class="project-card">
+    <h3>Restaurant Website</h3>
+    <p>HTML • CSS • Responsive Design</p>
+    <a href="https://github.com/mehreensultana01/Restaurant-Website" target="_blank">
+    <button>View Project</button>
+    </a>
+  </div>
+
+  <div class="project-card">
+    <h3>Calculator App</h3>
+    <p>HTML • CSS • JavaScript</p>
+    <a href="https://github.com/mehreensultana01/Calculator-App" target="_blank">
+    <button>View Project</button>
+    </a>
+  </div>
+
+  <div class="project-card">
+    <h3>To-Do List</h3>
+    <p>A task management application for organizing daily work.</p>
+    <a href="https://github.com/mehreensultana01/Task-Manager-App" target="_blank">
+    <button>View Project</button>
+    </a>
+  </div>
+
+</div>
+</section>
+
+<section id="featured-projects">
+
+    <h2>Featured Projects</h2>
+
+    <div class="featured-container">
+
+        <!-- 1. Portfolio Website -->
+        <div class="featured-card">
+
+            <img src="images/portfolio-preview.png"
+                 alt="Portfolio Website">
+
+            <div class="featured-content">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    A responsive personal portfolio built with HTML and CSS.
+                    It showcases my skills, projects, and contact information.
+                </p>
+
+                <strong>Technologies:</strong>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+
+                <div class="project-links">
+
+                    <a href="https://github.com/mehreensultana01/Portfolio"
+                       target="_blank"
+                       class="btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+
+                    <a href="https://mehreensultana01.github.io/Portfolio/"
+                       target="_blank"
+                       class="btn">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- 2. Restaurant Website -->
+        <div class="featured-card">
+
+            <img src="images/restaurant-website.png"
+                 alt="Restaurant Website">
+
+            <div class="featured-content">
+
+                <h3>Restaurant Website</h3>
+
+                <p>
+                    A modern responsive restaurant website built using
+                    HTML, CSS and JavaScript.
+                </p>
+
+                <strong>Technologies:</strong>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+
+                    <a href="https://github.com/mehreensultana01/Restaurant-Website"
+                       target="_blank"
+                       class="btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+
+                    <a href="https://mehreensultana01.github.io/Restaurant-Website/"
+                       target="_blank"
+                       class="btn">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- 3. Calculator App -->
+        <div class="featured-card">
+
+            <img src="images/calculator.png"
+                 alt="Calculator App">
+
+            <div class="featured-content">
+
+                <h3>Calculator App</h3>
+
+                <p>
+                    A responsive calculator built using HTML, CSS, and
+                    JavaScript. It supports basic arithmetic operations,
+                    percentage calculations, clear/delete functions,
+                    and a modern responsive interface.
+                </p>
+
+                <strong>Technologies:</strong>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+
+                    <a href="https://github.com/mehreensultana01/Calculator-App"
+                       target="_blank"
+                       class="btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+
+                    <a href="https://mehreensultana01.github.io/Calculator-App/"
+                       target="_blank"
+                       class="btn">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- 4. Task Manager -->
+        <div class="featured-card">
+
+            <img src="images/todo-app.png"
+                 alt="Task Manager To-Do List App">
+
+            <div class="featured-content">
+
+                <h3>Task Manager – To-Do List</h3>
+
+                <p>
+                    A responsive task management application built with
+                    HTML, CSS and JavaScript. Includes task creation,
+                    editing, deletion, search, filtering, sorting,
+                    priority levels, categories, due dates, dark mode
+                    and Local Storage.
+                </p>
+
+                <strong>Technologies:</strong>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Local Storage</span>
+                </div>
+
+                <div class="project-links">
+
+                    <a href="https://github.com/mehreensultana01/Task-Manager-App"
+                       target="_blank"
+                       class="btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+
+                    <a href="https://mehreensultana01.github.io/Task-Manager-App/"
+                       target="_blank"
+                       class="btn">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Mehreen Sultana | All Rights Reserved.
+</p>
+
+</footer>
 
 </body>
 </html>
