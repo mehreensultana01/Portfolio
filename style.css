@@ -618,6 +618,7 @@ footer{
         width: 100%;
         min-height: 55px;
         background: #2563eb;
+        position: sticky;
         z-index: 9999;
     }
 
