@@ -612,16 +612,40 @@ footer{
        NAVIGATION
     ========================================= */
 
-     .topnav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+      .topnav {
+        display: block;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
     }
 
     .topnav a {
+        display: none;
+    }
+
+    .topnav a.icon {
+        display: block;
+        float: right;
+        font-size: 22px;
+        padding: 14px 18px;
+    }
+
+    .topnav.responsive {
+        position: sticky;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        display: block;
         float: none;
-        font-size: 13px;
-        padding: 8px 6px;
+        text-align: left;
+        padding: 14px 20px;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 
 
