@@ -624,8 +624,11 @@ footer{
     }
 
     .topnav a.icon {
-        display: block;
-        float: right;
+         display: block;
+        float: none;
+        position: absolute;
+        left: 0;
+        top: 0;
         font-size: 22px;
         padding: 14px 18px;
     }
@@ -644,7 +647,8 @@ footer{
 
     .topnav.responsive a.icon {
         position: absolute;
-        right: 0;
+        left: 0;
+        right: auto;
         top: 0;
     }
 
