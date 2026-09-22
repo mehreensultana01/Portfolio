@@ -507,18 +507,330 @@ footer{
     transform: translateY(-2px);
 }
 
+
 /* =========================================
-   MOBILE
+   MOBILE RESPONSIVE DESIGN
 ========================================= */
 
 @media (max-width: 700px) {
 
-    #featured-projects .featured-container {
+    /* General */
+    body {
+        overflow-x: hidden;
+    }
+
+    section,
+    .section {
+        width: 100%;
+        padding: 45px 20px;
+        box-sizing: border-box;
+    }
+
+    section h2,
+    .section h2 {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+
+    /* =========================================
+       HERO SECTION
+    ========================================= */
+
+    .hero {
+        min-height: auto;
+        padding: 50px 20px;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .profile {
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+        margin-top: 10px;
+    }
+
+    .hero p {
+        font-size: 15px;
+        line-height: 1.7;
+        margin: 15px auto;
+        max-width: 100%;
+    }
+
+
+    /* =========================================
+       HERO BUTTONS
+    ========================================= */
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+
+
+    /* =========================================
+       SOCIAL ICONS
+    ========================================= */
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    .social-icons a {
+        font-size: 22px;
+        margin: 0 8px;
+    }
+
+
+    /* =========================================
+       NAVIGATION
+    ========================================= */
+
+    .topnav {
+        width: 100%;
+        box-sizing: border-box;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .topnav a {
+        font-size: 14px;
+        padding: 12px 10px;
+    }
+
+
+    /* =========================================
+       ABOUT / EDUCATION / PERSONAL INFO
+    ========================================= */
+
+    .section p {
+        font-size: 15px;
+        line-height: 1.7;
+        word-wrap: break-word;
+    }
+
+    #Education ul {
+        padding-left: 20px;
+    }
+
+    #Education li {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    #Personal_Info p {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        flex-wrap: wrap;
+        word-break: break-word;
+    }
+
+    #Personal_Info p i {
+        min-width: 20px;
+    }
+
+
+    /* =========================================
+       SKILLS
+    ========================================= */
+
+    #skills {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .skill {
+        width: 100%;
+    }
+
+    .progress {
+        width: 100%;
+    }
+
+    .progress-bar {
+        font-size: 12px;
+    }
+
+
+    /* =========================================
+       PROJECTS
+    ========================================= */
+
+    #Projects {
+        padding: 45px 20px;
+    }
+
+    .project-container {
+        display: grid;
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project-card h3 {
+        font-size: 20px;
+    }
+
+    .project-card p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .project-card .btn {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+
+    /* =========================================
+       FEATURED PROJECTS
+    ========================================= */
+
+    #featured-projects {
+        padding: 45px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #featured-projects .featured-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        width: 100%;
     }
 
     #featured-projects .featured-card {
         width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    #featured-projects .featured-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    #featured-projects .featured-content {
+        padding: 20px;
+    }
+
+    #featured-projects .featured-content h3 {
+        font-size: 21px;
+    }
+
+    #featured-projects .featured-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    #featured-projects .tags {
+        gap: 6px;
+    }
+
+    #featured-projects .tags span {
+        font-size: 11px;
+        padding: 5px 9px;
+    }
+
+    #featured-projects .project-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #featured-projects .project-links .btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* =========================================
+       FOOTER
+    ========================================= */
+
+    footer {
+        padding: 25px 15px;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
+
+@media (max-width: 400px) {
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    section,
+    .section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    section h2,
+    .section h2 {
+        font-size: 25px;
+    }
+
+    #featured-projects {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
 }
